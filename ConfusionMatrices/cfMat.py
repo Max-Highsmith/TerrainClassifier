@@ -2,7 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import copy
 
-allModels = ['alexNet', 'densenet_201', 'resnet18', 'vgg19', 'vgg19_bn']
+#allModels = ['alexNet', 'densenet_201', 'resnet18', 'vgg19', 'vgg19_bn']
+allModels = ['ensembleTrain','ensembleTest','ensembleTrainSET4','ensembleTestSET4']
 for model in allModels:
 	confusionMatrix = np.loadtxt(model+'.confuse')
 	colSumsTotals = [0,0,0]
